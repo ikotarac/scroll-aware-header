@@ -1,0 +1,34 @@
+{
+  "name": "@vekktor/react-navigation-header",
+  "version": "1.0.0",
+  "description": "Scroll aware header that plays nice with React Navigation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vekktor/react-navigation-header.git"
+  },
+  "keywords": [
+    "react navigation",
+    "react navigation header",
+    "navigation header",
+    "react-native header",
+    "scrollable header",
+    "parallax header",
+    "scrollable react navigation"
+  ],
+  "author": "Ilijan Kotarac",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vekktor/react-navigation-header/issues"
+  },
+  "homepage": "https://github.com/vekktor/react-navigation-header#readme",
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.8.3",
+    "react-native": "^0.58.5",
+    "react-navigation": "^3.3.2"
+  }
+}
