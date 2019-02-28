@@ -1,14 +1,14 @@
 {
-  "name": "@vekktor/react-navigation-header",
+  "name": "scroll-aware-header",
   "version": "1.0.0",
-  "description": "Scroll aware header that plays nice with React Navigation.",
+  "description": "Scroll aware header that plays nicely with React Navigation.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vekktor/react-navigation-header.git"
+    "url": "git+https://github.com/ikotarac/scroll-aware-header.git"
   },
   "keywords": [
     "react navigation",
@@ -22,9 +22,9 @@
   "author": "Ilijan Kotarac",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vekktor/react-navigation-header/issues"
+    "url": "https://github.com/ikotarac/scroll-aware-header/issues"
   },
-  "homepage": "https://github.com/vekktor/react-navigation-header#readme",
+  "homepage": "https://github.com/ikotarac/scroll-aware-header#readme",
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.8.3",
