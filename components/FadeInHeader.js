@@ -38,8 +38,8 @@ export default class FadeInHeader extends Component {
     leftComponent: PropTypes.element,
     centerComponent: PropTypes.element,
     rightComponent: PropTypes.element,
-    backIcon: PropTypes.elementType,
-    closeIcon: PropTypes.elementType,
+    BackIcon: PropTypes.elementType,
+    CloseIcon: PropTypes.elementType,
     renderTitle: PropTypes.func,
     statusBarProps: PropTypes.object,
     startBackgroundColor: PropTypes.string,
@@ -167,8 +167,8 @@ export default class FadeInHeader extends Component {
       hideLeftComponent,
       screenIndex,
       useCloseIcon,
-      backIcon,
-      closeIcon,
+      BackIcon,
+      CloseIcon,
     } = this.props;
 
     if (leftComponent) {
@@ -182,8 +182,8 @@ export default class FadeInHeader extends Component {
     }
 
     const Icon = useCloseIcon
-      ? closeIcon || DefaultCloseIcon
-      : backIcon || DefaultBackIcon;
+      ? CloseIcon || DefaultCloseIcon
+      : BackIcon || DefaultBackIcon;
     return <Icon onPress={this.handleBackPress} style={styles.icon} />;
   };
 

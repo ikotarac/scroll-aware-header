@@ -21,13 +21,20 @@ export default function createScrollDriver() {
     }),
   );
 
-  const connectProvider = ProviderComponent => props => (
-    <ProviderComponent onScroll={onScroll} scrollEventThrottle={1} {...props} />
-  );
+  const connectProvider = ProviderComponent =>
+    React.forwardRef((props, ref) => (
+      <ProviderComponent
+        onScroll={onScroll}
+        scrollEventThrottle={1}
+        {...props}
+        ref={ref}
+      />
+    ));
 
-  const connectConsumer = ConsumerComponent => props => (
-    <ConsumerComponent {...scrollOffset} {...props} />
-  );
+  const connectConsumer = ConsumerComponent =>
+    React.forwardRef((props, ref) => (
+      <ConsumerComponent {...scrollOffset} {...props} ref={ref} />
+    ));
 
   return {
     connectProvider,
