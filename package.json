@@ -27,8 +27,10 @@
   "homepage": "https://github.com/ikotarac/scroll-aware-header#readme",
   "dependencies": {
     "prop-types": "^15.7.1",
-    "react": "^16.6.3",
-    "react-native": "^0.58.3",
     "react-navigation": "^3.2.1"
+  },
+  "devDependencies": {
+    "react": "^16.6.3",
+    "react-native": "^0.58.3"
   }
 }
