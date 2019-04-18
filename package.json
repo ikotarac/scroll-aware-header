@@ -29,7 +29,7 @@
     "prop-types": "^15.7.1",
     "react-navigation": "^3.2.1"
   },
-  "devDependencies": {
+  "peerDependencies": {
     "react": "^16.6.3",
     "react-native": "^0.58.3"
   }
