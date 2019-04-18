@@ -1,6 +1,6 @@
 {
   "name": "scroll-aware-header",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Scroll aware header that plays nicely with React Navigation.",
   "main": "index.js",
   "scripts": {
