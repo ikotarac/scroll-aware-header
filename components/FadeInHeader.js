@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet, Animated, StatusBar, Text } from 'react-native';
+import { NavigationActions } from 'react-navigation';
 
 import { Platform } from '../services';
 import {
@@ -40,6 +41,7 @@ export default class FadeInHeader extends Component {
     rightComponent: PropTypes.element,
     BackIcon: PropTypes.elementType,
     CloseIcon: PropTypes.elementType,
+    onBackPress: PropTypes.func,
     renderTitle: PropTypes.func,
     statusBarProps: PropTypes.object,
     startBackgroundColor: PropTypes.string,
@@ -104,8 +106,13 @@ export default class FadeInHeader extends Component {
   }
 
   handleBackPress = () => {
-    const { navigation } = this.props;
-    navigation.goBack();
+    const { onBackPress, navigation } = this.props;
+
+    if (onBackPress) {
+      onBackPress();
+    } else {
+      navigation.dispatch(NavigationActions.back());
+    }
   };
 
   HeaderContainer = ownProps => {
